@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ea37e3d5a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./game.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="overlay">
+
+      <form id="box" class="firstBox">
+        <div class="text">CREATE PLAYERS</div>
+        <div class="input-content">
+          <div class="first__player">
+            <h2>PLAYER ONE</h2>
+            <input type="text" id="player1__name" placeholder="Type your name ...">
+          </div>
+          <div class="second__player">
+            <h2>PLAYER TWO</h2>
+            <input type="text" id="player2__name" placeholder="Type your name ...">
+          </div>
+          <button id="submitButton">
+            START 
+            </button>
+          </form>
+      </div>
+      
+    <div id="box" class="rulles">
+      <h1 class="transformText">RULLES OF THE GAME</h1>
+      <h1 class="displayRulles hidden">Whoever first gets the highest score of 100 wins the game. If a dice lands on "one'', not only does your score reset back to zero, but also your turn goes to the opposition. Therefore, when necessary, you may use the hold button to keep the score and avoid losing it.
+      </h1>
+    </div>
+  </div>
+  
+    <div class="game">
+      <div class="left-side" id="__person-0">
+        <div class="__person-0-name" id="name">PLAYER ONE</div>
+        <div class="__person-0-score" id="score">0</div>
+        <div class="__person-0-stats" id="stats">
+          <div class="current-text">CURRENTLY</div>
+          <div class="__person-0-current-score" id="current-score">0</div>
+        </div>
+      </div>
+      <div class="right-side player--active" id="__person-1">
+        <div class="__person-1-name" id="name">PLAYER TWO</div>
+        <div class="__person-1-score" id="score">0</div>
+        <div class="__person-1-stats" id="stats">
+          <div class="current-text">CURRENTLY</div>
+          <div class="__person-1-current-score" id="current-score">0</div>
+        </div>
+      </div>
+      <nav>
+        <i class="fa-solid fa-circle-stop" id="hold-score"></i>
+        <i class="fa-solid fa-dice" id="roll-dice"></i>
+        <i class="fa-solid fa-arrows-spin" id="restart-game"></i>
+      </nav>
+      <header class="header">START THE GAME</header>
+      <section class="dice-bg">
+        <img src="./img/image-1.png" class="diceEl"></img>
+      </section>
+    </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

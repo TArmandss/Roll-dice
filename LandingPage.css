@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+ 
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #171717;
+
+
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+  
+}
+a{
+  color: #fed0c5;
+  text-decoration: none;
+}
+
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(120.98deg, #fed0c5 9.92%, #ffcc7e 93.02%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;  
+
+  
+}
+.div{
+  width: 100%;
+  height: 15vh;
+  background-color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s;
+  transition: all 2s ease-in-out;
+
+}
+.btn-game:hover{
+  background: linear-gradient(120.98deg, #fed0c5 9.92%, #ffcc7e 93.02%);  
+}
+.btn-game:hover a{
+  color: #171717;
+  font-weight: 600;
+}
+.btn-game{
+  padding: 10px;
+  background: transparent;
+  color: #fed0c5;
+  border: 1px solid #fed0c5;
+  width: 100px;
+  height: 20px;
+cursor: pointer;
+}
+
+
+
+h1 {
+  font-family: 'UROTRAMAN';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 249px;
+  line-height: 200px;
+  color: #171717;
+}
+h2 {
+  font-family: 'NIKEA';
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 83px;
+  color: #171717;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  width: 30%;
+  color: #000000;
+}
+.author {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 52px;
+
+  text-align: center;
+
+  color: #000000;
+}
+img {
+  line-height: 1px;
+  width: 70px;
+  height: 70px;
+}
+
+.bottom-page {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1717178f;
+  border-radius: 24px;
+}
+
+.play-btn {
+  z-index: 555;
+  padding: 20px;
+background: transparent;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: 'poppins', sans-serif;
+  font-weight: bolder;
+}
+
